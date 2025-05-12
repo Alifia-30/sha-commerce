@@ -1,6 +1,6 @@
 <x-Layout>
     <div class="container mt-4">
-        <!-- Hero Section -->
+        <!-- Hero -->
         <div class="jumbotron text-center bg-light p-5 rounded">
             <h1 class="display-4">Welcome to If-Commerce</h1>
             <p class="lead">Find the best products, best quality, and the best price</p>
