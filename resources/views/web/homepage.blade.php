@@ -2,9 +2,9 @@
     <div class="container mt-4">
         <!-- Hero -->
         <div class="jumbotron text-center bg-light p-5 rounded">
-            <h1 class="display-4">Welcome to If-Commerce</h1>
-            <p class="lead">Find the best products, best quality, and the best price</p>
-            <a href="/products" class="btn btn-primary btn-lg">Shopping Right Now!</a>
+            <h1 class="display-4">Shasa Bag</h1>
+            <p class="lead">Tampil cantik dan percaya diri bersama Shasa – tas wanita dengan desain modis, praktis, dan penuh gaya.</p>
+            <a href="/products" class="btn btn-primary btn-lg">Go Grab Yours Now!</a>
         </div>
 
         <!-- Kategori Produk -->
@@ -25,7 +25,7 @@
         <!-- Produk Unggulan -->
         <div class="mt-5">
             <h3 class="mb-4">Products</h3>
-            <div class="row">
+            <div class="row g-3">
                 @foreach ($products as $product)
                     <div class="col-md-3 mb-4">
                         <x-card :image="'storage/' . $product->image_url" :title="$product->name">
@@ -34,9 +34,7 @@
                             <a href="/products/{{ $product->slug }}" class="btn btn-success">View Details</a>
                         </x-card>
                     </div>
+                @endforeach
             </div>
-            @endforeach
         </div>
-    </div>
-    </div>
 </x-Layout>
